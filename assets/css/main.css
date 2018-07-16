@@ -740,19 +740,16 @@ main {
 /* left profit display */
 
 .profit-top-left {
-    height: auto;
     width: 690px;
     float: left;
 }
 
 .profit-top-left1 {
-    height: auto;
     width: 100%;
     overflow: hidden;
 }
 
 .latest-depo {
-    height: auto;
     width: 335px;
     float: left;
 }
@@ -774,7 +771,6 @@ main {
 }
 
 .latest-withd {
-    height: auto;
     width: 335px;
     float: right;
     margin: 0px;
@@ -791,6 +787,30 @@ main {
     font-family: 'Arial', arial;
     display: block;
     text-align: center;
+}
+
+.depo-with-bottom {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.profit-bottom1 {
+    width: 344px;
+    margin: 0 auto;
+}
+
+.profit-bottom1 p {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 24px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.profit-bottom2 {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
 }
 
 /* Ends here */
@@ -918,4 +938,22 @@ input {
 
 #inv_amount {
 	border: 0;
+}
+
+.foot3-1 {
+    width: 100%;
+    margin-top: 13px;
+    overflow: hidden;
+}
+
+.foot3 a {
+    color: #fff;
+    margin-top: 14px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.foot3_2 a {
+    margin-top: 13px;
+    float: left;
 }
