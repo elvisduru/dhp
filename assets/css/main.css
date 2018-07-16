@@ -626,6 +626,15 @@ main {
     padding: 13px 6px;
 }
 
+#returns {
+	border: 0px;
+    width: 130px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #000000d6;
+    padding: 13px 6px;
+}
+
 .profit-top-right1_2_4 {
     height: 44px;
     width: 210px;
@@ -815,6 +824,151 @@ main {
 }
 
 /* Ends here */
+
+/*what-we-do starts*/
+
+#posts {
+	display: flex;
+	flex-direction: row;
+	padding: 30px 120px;
+}
+
+.control-div {
+	flex: 1 0 auto;
+	width: 33.3%;
+	display: flex;
+	flex-direction: column;
+}
+
+.controls {
+	display: flex;
+	flex-direction: row;
+}
+
+.control-div h3 {
+	font-size: 1.4em;
+	font-weight: bold;
+	line-height: 1.6;
+	margin-bottom: 10px;
+}
+
+.control {
+	font-size: 2em;
+	color: #021B79;
+	margin-right: 5px;
+}
+
+.post-view {
+	height: 300px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	overflow: hidden;
+	align-items: center;
+	position: relative;
+}
+
+.post {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 98%;
+	margin: 0 15px;
+	box-shadow: 0 0 3px rgba(0,0,0, 0.5);
+	border-radius: 4px;
+	position: relative;
+}
+
+.post-image {
+	width: 280px;
+	height: 130px;
+	background-size: cover;
+	background-position: center;
+	background-image: url("https://images.pexels.com/photos/942317/pexels-photo-942317.jpeg?auto=compress&cs=tinysrgb&h=350");
+}
+
+.post:nth-of-type(1) .post-image {
+	background-image: url("../img/bitcoin-2643159_640.jpg");
+}
+
+.post:nth-of-type(2) .post-image {
+	background-image: url("../img/agr.jpg");
+}
+
+.post:nth-of-type(3) .post-image {
+	background-image: url("../img/est.jpg");
+}
+
+.post:nth-of-type(4) .post-image {
+	background-image: url("../img/mob.png");
+}
+
+.post:nth-of-type(5) .post-image {
+	background-image: url("../img/meta.jpg");
+}
+
+.post:nth-of-type(6) .post-image {
+	background-image: url("../img/ofs.jpg");
+}
+
+.post:nth-of-type(7) .post-image {
+	background-image: url("../img/tp.jpg");
+}
+
+.post-title {
+	color: #021B79;
+	font-weight: 700;
+	font-size: 1em;
+	line-height: 1.4em;
+	padding-bottom: 10px;
+}
+
+.post-text {
+	padding-bottom: 10px;
+}
+
+.post-body {
+	padding: 0 20px;
+	font-size: 0.94em;	
+}
+
+
+/*what-we-do ends*/
+
+
+/*chart styles*/
+.charts {
+	display: flex;
+	justify-content: space-around;
+	padding: 20px 60px;
+}
+
+.coinmarketcap-currency-widget {
+	width: 220px !important;
+}
+
+.coinmarketcap-currency-widget > div {
+	border: 0 !important;
+	width: 180px !important;
+}
+
+.coinmarketcap-currency-widget > div span:nth-of-type(1) {
+	font-size: 14px !important;
+}
+
+.coinmarketcap-currency-widget > div span:nth-of-type(2) {
+	font-size: 12px !important;
+}
+
+.coinmarketcap-currency-widget > div img {
+	width: 40px;
+}
+
+.coinmarketcap-currency-widget > div > div:nth-of-type(2) {
+	display: none;
+}
+/*chart style ends*/
+
 
 /* footer style */
 
