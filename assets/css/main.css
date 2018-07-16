@@ -145,6 +145,7 @@ header {
     position: absolute;
     color: white;
     font-family: 'Roboto', sans-serif;
+    border-top: 3px solid #3AC9EBFF;
 }
 
 .logo {
@@ -157,8 +158,6 @@ header {
 
 .m-right {
     flex: 1 1 auto;
-    /*
-	padding: 15px 0;*/
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -217,6 +216,20 @@ a {
     align-items: center;
     justify-content: space-between;
     margin-right: -120px;
+    position: relative;
+    z-index: 1;
+}
+
+.top::before {
+	content: "";
+	bottom: 10px;
+	left: -25px;
+	width: 70px;
+	height: 97px;
+	position: absolute;
+	background: #3AC9EBFF;
+	transform: rotate(45deg);
+	z-index: -1;
 }
 
 .top span {
@@ -227,25 +240,35 @@ a {
     float: right;
     padding: 5px;
     margin-right: 120px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+}
+
+main {
+	overflow-x: hidden;
 }
 
 #hero {
-    height: 100vh;
     background: url(../img/head.jpg);
     text-align: center;
     display: flex;
     flex-direction: column;
     font-family: "Roboto", sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 120px;
 }
 
 .hero-text {
     height: 100%;
     align-self: center;
-    justify-content: center;
+    justify-content: space-between;
     display: flex;
     flex-direction: column;
     color: white;
     line-height: 1.5;
+    padding-top: 200px;
 }
 
 .hero-text p {
@@ -263,9 +286,55 @@ a {
     align-self: center;
     color: #000000;
     padding: 8px;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 70px;
 }
 
+#hero .plans {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	height: 250px;
+	padding: 12px 0;
+	background: rgba(31, 94, 148, 0.47);
+}
+
+#hero .divider {
+	width: 1px;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.plan {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.plan p {
+	font-size: 0.9em;
+	letter-spacing: 1px;
+}
+
+.plan .title {
+	background: #ffffff24;
+	width: 160px;
+	padding: 6px;
+	border-radius: 3px;
+	font-size: 1em;
+}
+
+.plan .rate {
+	font-size: 3.4em;
+}
+
+.plan .description {
+	font-weight: lighter;
+	line-height: 2;
+}
+
+/*about section*/
 #abt-section {
     height: 550px;
     background-image: url(../img/aboutbg.jpg);
@@ -700,6 +769,10 @@ a {
     text-align: center;
 }
 
+.active-tab {
+    border: 1px solid #666666;
+}
+
 .latest-withd {
     height: auto;
     width: 335px;
@@ -713,7 +786,6 @@ a {
     padding: 15px 0px;
     border-radius: 2px;
     color: #fff;
-    border: 1px solid #666666;
     cursor: pointer;
     font-size: 18px;
     font-family: 'Arial', arial;
@@ -789,4 +861,61 @@ a {
     color: #fff;
     margin-top: 12px;
     letter-spacing: 1px;
+}
+
+.hide {
+	display: none;
+}
+
+.deposits {
+	display: none;
+}
+
+.withdrawals, .deposits {
+	padding: 30px;
+}
+
+.entries {
+	width: 100%;
+	font-family: "Roboto", sans-serif;
+	color: #333;
+	box-shadow: 0 32px 64px 0 rgba(208,217,226,.375), 
+				0 -32px 64px 0 rgba(208,217,226,.25);
+	border-radius: 5px;
+}
+
+tr {
+	border-bottom: 1px solid #edf1f4;
+}
+
+td {
+	vertical-align: middle;
+	padding: 10px;
+}
+
+td img {
+	width: 30px;
+}
+
+td .amount {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #5354D1FF;
+}
+
+td .created {
+	font-size: 0.8em;
+	color: grey;
+}
+
+td .fas {
+	float: right;
+}
+
+input {
+	outline: none;
+}
+
+#inv_amount {
+	border: 0;
 }
