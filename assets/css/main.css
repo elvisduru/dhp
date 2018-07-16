@@ -170,8 +170,8 @@ table {
     font-size: 16px;
     color: #fff;
     text-align: justify;
-    line-height: 30px;
-    letter-spacing: 0.5px;
+    line-height: 31px;
+    letter-spacing: 2px;
 }
 
 .abt-text2 {
@@ -185,6 +185,7 @@ table {
     background-color: #fff;
     border-radius: 2px;
     text-decoration: none;
+    padding: 8px;
 }
 
 .abt-left {
@@ -200,6 +201,212 @@ table {
     margin-top: 39px;
 }
 
-.abt-right a{
-    
+.abt-right a img {
+    transition: all 0.5s ease;
+    width: 85%;
+}
+
+.abt-text3 {
+    height: auto;
+    width: 160px;
+    margin-top: 39px;
+    margin-left: 42px;
+}
+
+.abt-text3 a {
+    color: #2582d2;
+    background-color: #fff;
+    border-radius: 2px;
+    text-decoration: none;
+    padding: 8px;
+}
+
+#profit-sec {
+    height: auto;
+    width: 100%;
+    min-width: 1170px;
+    background-color: #fff;
+}
+
+.profit-container {
+    height: auto;
+    width: 1140px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 30px 0px;
+}
+
+.profit-top {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.profit-top-left {
+    height: auto;
+    width: 690px;
+    float: left;
+}
+
+.profit-top-right {
+    height: auto;
+    width: 410px;
+    float: right;
+}
+
+.profit-top-right1 {
+    height: auto;
+    width: 100%;
+}
+
+/* calculator */
+
+.calc {
+    height: auto;
+    width: 100%;
+    position: relative;
+    z-index: 11111;
+    margin-left: 13px;
+}
+
+.profit-top-right1_1 {
+    height: auto;
+    width: 100%;
+    background-color: #00447e;
+    padding: 10px;
+    overflow: hidden;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    position: relative;
+    margin-top: -38px;
+    z-index: 9999;
+}
+
+.profit-top-right1_1 p {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    margin-left: 65px;
+}
+
+.profit-top-right1_2 {
+    height: auto;
+    width: 100%;
+    background-color: #2582d2;
+    padding: 20px;
+    overflow: hidden;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.profit-top-right1_2_1 {
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
+    margin-left: 25px;
+    overflow: hidden;
+}
+
+.profit-top-right1_2_1 select {
+    width: 98%;
+    border-radius: 5px;
+    padding: 10px 0px;
+    margin: 0 auto;
+    padding-left: 10px;
+}
+
+.profit-top-right1_2_1 input[type="text"] {
+    padding: 12px 15px;
+    width: 55%;
+    margin-left: 12%;
+    text-align: center;
+    margin-top: 21px;
+}
+
+.profit-top-right1_2_3 {
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.profit-top-right1_2_3_1 {
+    height: 44px;
+    width: 175px;
+    background-image: url(../img/rettxt.png);
+    float: left;
+}
+
+.profit-top-right1_2_3_1l {
+    height: auto;
+    width: 73px;
+    float: left;
+    text-align: center;
+    margin-top: 11px;
+}
+
+.profit-top-right1_2_3_1l p {
+    font-size: 16px;
+    font-family: 'PT Sans', sans-serif;
+    color: #fff;
+}
+
+.profit-top-right1_2_3_1r {
+    height: auto;
+    width: 102px;
+    float: right;
+}
+
+.profit-top-right1_2_3_1r input[type="text"] {
+    border: 0px;
+    width: 99%;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #000000d6;
+    padding: 13px 6px;
+}
+
+.profit-top-right1_2_3_2 {
+    height: 44px;
+    width: 175px;
+    background-image: url(../img/rettxt.png);
+    float: right;
+}
+
+.profit-top-right1_2_3_2l {
+    height: auto;
+    width: 73px;
+    float: left;
+    text-align: center;
+    margin-top: 11px;
+}
+
+.profit-top-right1_2_3_2l p {
+    font-size: 16px;
+    font-family: 'PT Sans', sans-serif;
+    color: #fff;
+}
+
+.profit-top-right1_2_3_2r {
+    height: auto;
+    width: 102px;
+    float: right;
+}
+
+.profit-top-right1_2_3_2r input[type="text"] {
+    border: 0px;
+    width: 99%;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #000000d6;
+    padding: 13px 6px;
+}
+
+.profit-top-right1_2_4 {
+    height: 44px;
+    width: 210px;
+    margin: 0 auto;
+    background-image: url(../img/profittxt.png);
+    margin-top: 80px;
+    overflow: hidden;
 }
